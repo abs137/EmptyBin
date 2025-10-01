@@ -42,7 +42,7 @@ async function loadExcel() {
 
 /* ------------ Utilities ------------ */
 function isEMPTY(val) {
-  return val.trim().toUpperCase() === "EMPTY";
+  return val.trim().toUpperCase() === "Y";
 }
 
 // Make the typed/scanned ID safe for comparison
