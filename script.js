@@ -64,7 +64,7 @@ function findNextEmptyLocations(startId, count = EMPTY_COUNT) {
   if (idx === -1) return { foundIndex: -1, locations: [] };
 
   const out = [];
-  for (let i = idx + 1; i < rowsRaw.length && out.length < count; i++) {
+  for (let i = idx; i < rowsRaw.length && out.length < count; i++) {
     const colA = rowsRaw[i][0];
     const colB = rowsRaw[i][1];
     if (isEMPTY(colB)) out.push(colA);
