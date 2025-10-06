@@ -8,7 +8,7 @@ let torchOn = false;
 /* ---------- Load Excel ---------- */
 async function loadExcel() {
   try {
-    const res = await fetch("./Book1.xlsx");
+    const res = await fetch("./book1.xlsx");
     if (!res.ok) throw new Error(`Could not fetch Excel: ${res.status}`);
 
     const data = await res.arrayBuffer();
